@@ -3,24 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site da Patricia</title>
+
+    <title>Site da Patrícia Limberger</title>
     <style>
         body {
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Alinhado ao topo */
-            height: 100vh;
-            margin: 0;
+            background-color: #D1CCC7; /* Fundo atualizado */
+            margin: 0; /* Remove margens padrão */
+            display: flex; /* Flexbox para layout */
+            flex-direction: column; /* Coloca itens em coluna */
+            align-items: center; /* Centraliza horizontalmente */
+            position: relative; /* Para posicionamento do balão */
         }
         img {
-            max-height: 100%;
-            max-width: 100%;
-            height: auto;
+            max-width: 100%; /* Imagem responsiva */
+            height: auto; /* Mantém a proporção da imagem */
+            margin-top: 0; /* Remove margem superior */
+            margin-bottom: 20px; /* Margem abaixo da imagem */
+        }
+        .whatsapp-icon {
+            position: fixed; /* Fixa o ícone no canto inferior direito */
+            bottom: 20px; /* Distância do fundo */
+            right: 20px; /* Distância da direita */
+            width: 65px; /* Tamanho do ícone */
+            height: 65px; /* Tamanho do ícone */
+        }
+        .message-bubble {
+            position: fixed; /* Fixa a mensagem no canto inferior direito */
+            bottom: 90px; /* Acima do ícone */
+            right: 85px; /* Ajustado para ficar à esquerda do ícone */
+            background-color: white; /* Fundo branco */
+            color: black; /* Texto preto */
+            padding: 5px 10px; /* Espaçamento interno */
+            border-radius: 5px; /* Cantos arredondados */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+            font-size: 18px; /* Tamanho da fonte aumentado */
+            font-weight: bold; /* Fonte em negrito */
+            border: 2px solid black; /* Borda mais forte */
+            display: flex; /* Flexbox para centralizar texto */
+            align-items: center; /* Centraliza verticalmente */
         }
     </style>
 </head>
 <body>
-    <img src="imagem_patricia.png" alt="Imagem da Patricia">
+    <img src="home.png" alt="Descrição da Imagem">
+    <div class="message-bubble">Fale comigo!</div>
+    <a href="https://wa.me/5551997758871?text=Ol%C3%A1%20vi%20o%20seu%20site%2C%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank">
+        <img class="whatsapp-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
 </body>
 </html>
